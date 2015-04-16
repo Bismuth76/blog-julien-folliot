@@ -4,7 +4,7 @@
 
 # Site
 title: JFT-Dev
-subtitle: ...
+subtitle: Du code, du blabla et un peu de sucre en poudre...
 description: Blog de Julien Folliot
 author: Julien Folliot
 language: French
@@ -51,8 +51,8 @@ tag_map:
 ## Hexo uses Moment.js to parse and display date
 ## You can customize the date format as defined in
 ## http://momentjs.com/docs/#/displaying/format/
-date_format: YYYY-MM-DD
-time_format: HH:mm:ss
+date_format: "[Le] LL"
+time_format: "[à] HH:mm:ss"
 
 # Pagination
 ## Set per_page to 0 to disable pagination
@@ -62,7 +62,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: http://hexo.io/plugins/
 ## Themes: http://hexo.io/themes/
-theme: landscape
+theme: jft
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
