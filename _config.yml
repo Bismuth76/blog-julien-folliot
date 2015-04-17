@@ -66,5 +66,7 @@ theme: jft
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
-deploy:
-  type:
+deploy: 
+    repo: https://github.com/Bismuth76/blog-julien-folliot.git
+    type: git
+    branch: master
