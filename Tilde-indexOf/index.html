@@ -3,17 +3,20 @@
 <head>
   <meta charset="utf-8">
   
-  <title>JFT-Dev</title>
+  <title>Tilde indexOf() | JFT-Dev</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Blog de Julien Folliot">
-<meta property="og:type" content="website">
-<meta property="og:title" content="JFT-Dev">
-<meta property="og:url" content="http://blog.jft-dev.fr/index.html">
+  <meta name="description" content="Je vous présente ici un petit tuyau qui vous permettra de briller en société et accéssoirement de rendre votre code un tantiné illisible pour le développeur qui n’est pas du matin.
+Allez hop ! Je vous">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Tilde indexOf()">
+<meta property="og:url" content="http://blog.jft-dev.fr/Tilde-indexOf/index.html">
 <meta property="og:site_name" content="JFT-Dev">
-<meta property="og:description" content="Blog de Julien Folliot">
+<meta property="og:description" content="Je vous présente ici un petit tuyau qui vous permettra de briller en société et accéssoirement de rendre votre code un tantiné illisible pour le développeur qui n’est pas du matin.
+Allez hop ! Je vous">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="JFT-Dev">
-<meta name="twitter:description" content="Blog de Julien Folliot">
+<meta name="twitter:title" content="Tilde indexOf()">
+<meta name="twitter:description" content="Je vous présente ici un petit tuyau qui vous permettra de briller en société et accéssoirement de rendre votre code un tantiné illisible pour le développeur qui n’est pas du matin.
+Allez hop ! Je vous">
   
     <link rel="alternative" href="/atom.xml" title="JFT-Dev" type="application/atom+xml">
   
@@ -65,9 +68,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-Tilde-indexOf" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-Tilde-indexOf" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/Tilde-indexOf/" class="article-date">
   <time datetime="2015-07-29T18:48:00.000Z" itemprop="datePublished">Le July 29, 2015</time>
@@ -84,8 +85,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/Tilde-indexOf/">Tilde indexOf()</a>
+    <h1 class="article-title" itemprop="name">
+      Tilde indexOf()
     </h1>
   
 
@@ -103,11 +104,13 @@
   <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>(~<span class="string">'toto'</span>.indexOf(<span class="string">'t'</span>)) &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">'Voilà !'</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p><strong>Voilà !</strong></p>
 <p>C’est plus concis, moins habituel et c’est pas jojo… Mais c’est stylé :D</p>
-        
-          <p class="article-more-link">
-            <a href="/Tilde-indexOf/#more">Read More</a>
-          </p>
-        
+<a id="more"></a>
+<p>Pour la petite explication, le <code>~</code> (tilde) est l’opérateur bitwise qui permet de faire les transformations suivantes :</p>
+<p><strong>~(-2)</strong> devient <strong>1</strong><br><strong>~(-1)</strong> devient <strong>0</strong><br><strong>~ 0</strong>   devient <strong>-1</strong><br><strong>~ 1</strong>   devient <strong>-2</strong><br><strong>~47</strong>   devient <strong>-48</strong></p>
+<p>Ainsi, notre indexOf renvoyant <code>-1</code> s’il ne trouve rien, en passant par ce mécanisme, on récupère <code>0</code>. Là où je trouve ça limite, c’est que quand il trouve quelque chose, on se retrouve avec des valeurs négatives…</p>
+<p>Pour plus d’information sur le pourquoi du comment, vous pouvez jeter un oeil sur <a href="https://fr.wikipedia.org/wiki/Compl%C3%A9ment_%C3%A0_deux" target="_blank" rel="external">le complément à deux</a>.</p>
+<p>A plus ;)</p>
+
       
     </div>
     <footer class="article-footer">
@@ -117,112 +120,20 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-Donner-sa-premiere-conference" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/Donner-sa-premiere-conference/" class="article-date">
-  <time datetime="2015-07-07T18:52:11.000Z" itemprop="datePublished">Le July 7, 2015</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Blabla/">Blabla</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/Donner-sa-premiere-conference/">Donner sa première conférence</a>
-    </h1>
+    <a href="/Donner-sa-premiere-conference/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Donner sa première conférence</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>J’ai eu la chance de donner une petite conférence, ma première, dernièrement (le 2 juillet 2015…) dans le cadre du MeetUp organisé par SQLI Nantes. Suite à ça, je me suis dit que ça pouvait être intéressant de vous faire partager quelques uns des points à prendre en compte si vous devez présenter quelque chose.<br>
-        
-          <p class="article-more-link">
-            <a href="/Donner-sa-premiere-conference/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://blog.jft-dev.fr/Donner-sa-premiere-conference/" data-id="cicvkvh0j0006igno36qtewm7" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Blabla/">Blabla</a></li></ul>
-
-    </footer>
-  </div>
   
 </article>
 
-
-  
-    <article id="post-C-est-quoi-ce-blog" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/C-est-quoi-ce-blog/" class="article-date">
-  <time datetime="2015-05-16T07:37:33.000Z" itemprop="datePublished">Le May 16, 2015</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Blabla/">Blabla</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/C-est-quoi-ce-blog/">C&#39;est quoi ce blog ?</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Ça fait quelques années déjà que je me tâte à enflammer ma plume sur un blog alors voilà, je me lance !</p>
-<blockquote>
-<p>Ok, mais pour quoi faire exactement ?</p>
-</blockquote>
-<p>Bin ça je ne sais pas encore à 100%. Disons que dans l’idéal j’aimerais :</p>
-<ul>
-<li>Vulgariser certains sujets</li>
-<li>Partager mes découvertes</li>
-<li>Proposer des minis-tutos</li>
-<li>Du blabla sur tout et n’importe quoi</li>
-<li>Etc, etc…</li>
-</ul>
-<p>Pour conclure, dans l’absolu j’aimerais que mes billets soient courts et concis (m’est avis que ça risque d’être compliqué…).</p>
-<p>A très vite !</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://blog.jft-dev.fr/C-est-quoi-ce-blog/" data-id="cicvkvh030000igno9xefvey3" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-  
 </section>
         
           <aside id="sidebar">
