@@ -40,7 +40,7 @@ C'est effectivement ce qu'on nous propose avec les Webcomponents. Plutôt que de
 
 Certes ! Mais les Webcomponents ne se limitent pas à la création de balises personnalisées.
 
-##C'est quoi un webcomponent ?
+## C'est quoi un webcomponent ?
 
 Si je devais résumer les webcomponents en quelques mots, je choisirai les suivants :
 - Isolation
@@ -61,7 +61,7 @@ Et voilà, j'ai une map qui s'affiche comme il faut ! C'est tellement simple que
 
 Et au-delà de la lecture du fichier par un développeur, il ne faut pas oublier que la sémantique est très importante au niveau du référencement auprès des moteurs de recherche.
 
-##Comment ça marche ?
+## Comment ça marche ?
 
 Pour que tout ça fonctionne, il a fallu mettre en place un certain nombre de mécanismes. 4 pour être précis :
 - Template
@@ -71,7 +71,7 @@ Pour que tout ça fonctionne, il a fallu mettre en place un certain nombre de m�
 
 Ces mécanisme font l'objet de spécifications W3C (pour les plus curieux : [specs de Template](https://html.spec.whatwg.org/multipage/scripting.html#the-template-element), [des Custom Elements](http://w3c.github.io/webcomponents/spec/custom/), [du Shadow DOM](http://w3c.github.io/webcomponents/spec/shadow/) et [des HTML Imports](http://w3c.github.io/webcomponents/spec/imports/)). Ces spécifications sont bien entendu à l'état de draft au moment où j'écris ces lignes...
 
-##Qu'est-ce donc qu'un template ?
+## Qu'est-ce donc qu'un template ?
 
 La notion de template, dans les grandes lignes, est identique à toutes celles qu'on peu rencontrer habituellement. Le but du jeu c'est d'avoir un morceau de HTML qu'on peut cloner à souhait et réutiliser partout dans notre code. On dira de ce morceau de code qu'il est inerte, on alimentera ensuite son contenu après l'avoir cloné.
 
@@ -115,7 +115,7 @@ L'exemple fourni par les specs est parlant, je vais donc vous le copier ici et l
 Prenons le temps d'analyser étape par étape.
 
 
-###La base de la base
+### La base de la base
 
 ```html
 <!DOCTYPE html>
@@ -125,7 +125,7 @@ Eh non, le DOCTYPE n'a pas bougé. Pour ceux qui débutent vraiment, ce DOCTYPE 
 
 Ensuite, on a le titre qui nous permet de savoir qu'on va parler de chats.
 
-###Quelques données
+### Quelques données
 
 ```html
 <script>
@@ -141,7 +141,7 @@ On initialise ici un jeu de données juste pour tester. Comme le dit si bien le 
 
 On notera que la pauvre Pillar n'a que 3 pattes :(
 
-###Ça y'est, on parle de template
+### Ça y'est, on parle de template
 
 ```html
 <table>
@@ -161,7 +161,7 @@ Penchons nous un peu dessus. On voit que ce template ne contient que des balises
 
 Si on lançait notre page avec seulement les trois blocs que je vous ai présenté jusqu'à maintenant, on verrai que notre `<tbody>` est vide. Le dernier morceau de code que je vais vous présenter va permettre de changer ça.
 
-###Sortons notre template de l'inertie
+### Sortons notre template de l'inertie
 
 ```html
 <script>
@@ -194,7 +194,7 @@ Nous allons ensuite boucler sur notre tableau de chats (personnellement, j'aurai
 Je tiens à vous rassurer, c'était le chapitre le plus verbeux, la suite devrait être plus courte. Allez, parlons un peu de...
 
 
-##Custom Elements
+## Custom Elements
 
 La seconde spec dont je vous ai parlé plus haut c'est Custom Elements.
 
