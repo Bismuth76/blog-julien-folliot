@@ -67,3 +67,6 @@ theme: jft
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
 deploy: 
+
+# Disqus
+disqus_shortname: jftdev
