@@ -1,5 +1,5 @@
 title: Dessine-moi un composant
-date: 2015-08-19 19:52:09
+date: 2015-08-27 22:52:09
 tags:
 - Tuto
 - Webcomponents
@@ -202,3 +202,81 @@ Custom Elements va définir deux choses majeures :
 
 - La possibilité de créer une balise avec le nom qu'on veut (ou presque)
 - Le cycle de vie d'un webcomponent
+
+*Je dis 2 majeures parce qu'il y a quelques éléments supplémentaires comme l'enregistrement d'un nouvel élément ou encore l'héritage, je vous laisse jeter un oeil aux specs pour plus d'infos.*
+
+### Créer une balise `<jacquie-et-michel>`
+
+Eh oui, tout est possible. Enfin tout ou presque... Pour être valide, votre balise doit :
+
+- Contenir au moins un trait d'union (ou tiret haut si vous préférez)
+- Ne pas porter un de ces noms (parce qu'ils sont déjà utilisés) :
+    - annotation-xml
+    - color-profile
+    - font-face
+    - font-face-src
+    - font-face-uri
+    - font-face-format
+    - font-face-name
+    - missing-glyph
+
+Ah et enfin, même si ce n'est pas interdit, éviter d'appeler une balise par le même nom qu'une autre (pour l'instant, il n'y a pas grand monde mais à l'avenir, les risques de conflits de noms risque d'augmenter...).
+
+Dans l'idéal, préfixez vos webcomponents d'un identifiant qui vous est propre. A titre d'exemple, les éléments liés à firebase sont tous préfixés par firebase (vous pouvez vérifier [ici](https://elements.polymer-project.org/elements/firebase-element?active=firebase-collection) ).
+
+### Le cycle de vie
+
+Comme je l'ai dit un peu plus haut, les spécifications des custom elements indiquent le cycle de vie d'un webcomponent. Sans rentrer dans les détails, voilà à peu près à quoi ça ressemble :
+
+- Création de l'élément
+- L'élément est attaché (entendez par là qu'il a été ajouté à un endroit dans la page)
+- Un des attributs de l'élément a changé (initialisé, modifié ou supprimé)
+- L'élément a été détaché
+
+Vous voyez, je vous avais dit que cette partie serait plus courte :)
+
+> Next !
+
+## Shadow DOM
+
+Bon par contre, là, je ne garantis pas que ça va être court...
+
+Je vais commencer par un exemple concret. Vous connaissez sans doute la balise `<video>` apparue avec HTML5. Si on inspecte le DOM d'une page Youtube ([celle-ci par exemple](https://www.youtube.com/watch?v=DIp7Q6vAMqE)\) et qu'on se rend au niveau de la balise vidéo, voilà ce qu'on peut voir (pour ceux qui ne voit pas comment faire l'inspection, commencer par faire un `F12` pour afficher la console puis cliquez sur la petite loupe en haut à gauche de la console et enfin, cliquez sur l'encart de la vidéo) :
+
+{% asset_img video-shadow-dom-invisible.png Visualisation de la balise vidéo dans le DOM %}
+
+On voit notre balise vidéo. Eh bien sans le savoir, vous êtes devant un webcomponent ! Restons sur notre page et rendons-nous dans les paramètres de la console (la petite roue dentée en haut à droite). Vous allez cocher la case **Show user agent shadow DOM** :
+
+{% asset_img parametres-console-chrome.png Paramètres de la console de Chrome %}
+
+Puis refermez la console et observez à nouveau la balise `<video>`. Vous pouvez desormais l'ouvrir et voir ce qu'il s'y passe !
+
+{% asset_img video-shadow-dom-visible.png Visualisation de la balise vidéo dans le DOM avec le Shadow DOM %}
+
+Eh bien le shadow DOM c'est ça, c'est un document isolé du reste de la page. Le concept va beaucoup plus loin que ça (dans les specs, vous pourrez lire la façon dont sont gérés les arbres de documents, la transmission des événements, etc, etc) mais c'est en gros ce qui va permettre de cantonner nos informations à notre composant.
+
+Pour information, par opposition au **Shadow DOM**, le DOM visible est appelé **Light DOM** (et Polymer a mis en place une espèce d'hybride des deux qui a été baptisé **Shady DOM**, mais nous verrons cela ensemble plus tard...).
+
+Allez, plus qu'un petit effort et je vous laisse tranquille ! Passons au plus simple...
+
+## HTML Imports
+
+Cette spec est la plus courte et surtout celle que je peux vous résumer très rapidement :
+
+> Les imports HTML permettent d'importer du HTML.
+
+**Voilà ! **
+
+On va donc pouvoir importer depuis une source, un bout de code HTML (au hasard, un webcomponent ^^).
+
+Un des intérêts de ces imports c'est qu'ils vont nous permettre de gérer nos dépendances intelligemment. Si j'ai un `<composant-alpha>` et que deux de mes autres composants `<composant-beta>` et `<composant-gamma>` ont besoin de mon `<composant-alpha>` *(un petit air de ["laisser passer A38"](https://www.youtube.com/watch?v=DTqvL74dAEw) )*, alors ils vont tous les deux faire un import du `<composant-alpha>` mais ce dernier ne sera en réalité importé qu'une seule fois. Plutôt cool non ?
+
+## Le mot de la fin
+
+Ce qu'il faut retenir de tout ça c'est qu'on va bientôt pouvoir créer des composants réutilisables dans tout l'internet du monde ~~et de Navarre~~ et partager nos plus belles implémentations de Nyan Cat !
+
+Pourquoi je dis bientôt ? Parce qu'aujourd'hui (en 2015 pour celui qui lira cette article en 2020 :P), on ne peut pour ainsi dire pas profiter pleinement de tout le potentiel des webcomponents étant donnée l'absence quasi totale d'implémentation des specs (qui pour rappel sont en draft) **en revanche**, on peut d'ores et déjà s'en rapprocher fortement grâce à **Polymer** et c'est ce que nous verrons dans les prochains articles !
+
+Alors à très vite !
+
+Bisous bisous ( *coeur avec les doigts* )
