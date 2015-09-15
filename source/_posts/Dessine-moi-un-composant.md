@@ -42,14 +42,14 @@ Certes ! Mais les Webcomponents ne se limitent pas à la création de balises pe
 
 ## C'est quoi un webcomponent ?
 
-Si je devais résumer les webcomponents en quelques mots, je choisirai les suivants :
+Si je devais résumer les webcomponents en quelques mots, je choisirais les suivants :
 - Isolation
 - Réutilisabilité
 - Sémantique
 
 **Isolation ?** Effectivement, un composant va pouvoir être isolé et ne pas être impacté par les autres éléments de la page qu'il s'agisse de script, de style ou de DOM.
 
-**Réutilisabilité ?** Parce-qu'un des buts des Webcomponents, ça va être le partage. On va pouvoir utiliser des composants clefs-en-main sans avoir à se soucier de ce qu'il y'a dedans. L'exemple le plus intéressant est celui de la GoogleMap. Habituellement, il faut charger une librairie, implémenter une balise donnée et faire un peu de JS pour avoir une map qui fonctionne. Avec les Webcomponents, je vais pouvoir écrire :
+**Réutilisabilité ?** Parce-qu'un des buts des Webcomponents, ça va être le partage. On va pouvoir utiliser des composants clefs-en-main sans avoir à se soucier de ce qu'il y a dedans. L'exemple le plus intéressant est celui de la GoogleMap. Habituellement, il faut charger une librairie, implémenter une balise donnée et faire un peu de JS pour avoir une map qui fonctionne. Avec les Webcomponents, je vais pouvoir écrire :
 
 ```html
 <google-map latitude="37.77493" longitude="-122.41942"></google-map>
@@ -141,7 +141,7 @@ On initialise ici un jeu de données juste pour tester. Comme le dit si bien le 
 
 On notera que la pauvre Pillar n'a que 3 pattes :(
 
-### Ça y'est, on parle de template
+### Ça y est, on parle de template !
 
 ```html
 <table>
