@@ -36,7 +36,7 @@ De manière générale, épurez au maximum votre support de présentation. Plus 
 
 Soyez **synthétique**, **clair** et **précis** (facile à dire évidemment...).
 
-Dans l'idéal, soyez drôle. Une petite blague par-ci, par-là, c'est toujours sympa (dans vos slides mais aussi dans votre discours). En revanche, adaptez vos blagues à votre publique, sans pour autant vous interdire une ou deux private jokes (par private joke, j'entends blague à destination d'une partie du publique, pas une blague entre votre copin(e) et vous-même, cela va de soi).
+Dans l'idéal, soyez drôle. Une petite blague par-ci, par-là, c'est toujours sympa (dans vos slides mais aussi dans votre discours). En revanche, adaptez vos blagues à votre publique, sans pour autant vous interdire une ou deux private jokes (par private joke, j'entends blague à destination d'une partie du publique, pas une blague entre un de vos potes et vous-même, cela va de soi).
 
 Ah, une petite note, plus à moi-même qu'autre chose. Il est important d'assumer ses blagues. Lors de ma présentation, je finissais chacune de mes blagues en baissant la tête :/
 
