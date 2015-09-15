@@ -4,7 +4,7 @@ tags:
 categories:
 - Javascript
 ---
-Je vous présente ici un petit tuyau qui vous permettra de briller en société et accéssoirement de rendre votre code un tantiné illisible pour le développeur qui n'est pas du matin.
+Je vous présente ici un petit tuyau qui vous permettra de briller en société et accessoirement de rendre votre code un tantinet illisible pour le développeur qui n'est pas du matin.
 
 Allez hop ! Je vous mets le petit bout de code qui illustre mes dires :
 
