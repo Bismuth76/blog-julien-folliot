@@ -12,7 +12,7 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://jft-dev.fr
+url: http://julien.folliot.me
 root: /
 permalink: :title/
 permalink_defaults:
@@ -70,3 +70,9 @@ deploy:
 
 # Disqus
 disqus_shortname: jftdev
+
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:

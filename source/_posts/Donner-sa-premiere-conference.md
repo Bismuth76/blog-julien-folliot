@@ -3,6 +3,7 @@ date: 2015-07-07 20:52:11
 tags: Blabla
 categories:
 - Blabla
+- Tech
 ---
 
 J'ai eu la chance de donner une petite conférence, ma première, dernièrement (le 2 juillet 2015...) dans le cadre du MeetUp organisé par SQLI Nantes. Suite à ça, je me suis dit que ça pouvait être intéressant de vous faire partager quelques uns des points à prendre en compte si vous devez présenter quelque chose.

@@ -8,6 +8,7 @@ tags:
 - HTML
 - CSS
 categories:
+- Frontend
 - Polymer
 ---
 

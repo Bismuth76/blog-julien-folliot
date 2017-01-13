@@ -1,7 +1,10 @@
 title: Tilde indexOf()
 date: 2015-07-29 20:48:00
 tags:
+- Reminder
+- Code de porc
 categories:
+- Frontend
 - Javascript
 ---
 Je vous présente ici un petit tuyau qui vous permettra de briller en société et accessoirement de rendre votre code un tantinet illisible pour le développeur qui n'est pas du matin.
